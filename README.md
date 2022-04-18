@@ -1,4 +1,4 @@
-# LDG4SSL-MNAR
+# PRG4SSL-MNAR
 
 ## Results (e.g. seed=1)
 

@@ -34,9 +34,12 @@
 |  | 400 | - |- |48.66 |Conventional settings|PRG^Last|
 |  | 2500 | - |- |70.03|||
 |  | 10000 | - |- |76.93 |||
-|  | - | - |50 |58.57 |CADR's protocol||
+|  | - | - |50 |58.57 |CADR's protocol|PRG|
 |  | - | - |100 |62.28 |||
 |  | - | - |200 |59.33 |||
+|  | - | - |50 |60.32 |CADR's protocol|PRG^Last|
+|  | - | - |100 |62.13 |||
+|  | - | - |200 |58.70 |||
 |  | 2500 | 100 |- |57.56 |Ours protocol||
 |  | 2500 | 200 |- |51.21 |||
 |mini-ImageNet | 1000| -|- |45.74 |Conventional settings|PRG|

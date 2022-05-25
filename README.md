@@ -34,7 +34,7 @@
 |  | DARP (reversed) | 100 |100 |80.86 |||
 |CIFAR-100  | 400 | - |- |48.67 |Conventional settings|PRG|
 |  | 2500 | - |- |69.81|||
-|  | 10000 | - |- |76.91 |||[cf100-con-10000-p]|
+|  | 10000 | - |- |76.91 |||[here][cf100-con-10000-p]|
 |  | 400 | - |- |48.66 |Conventional settings|PRG^Last|
 |  | 2500 | - |- |70.03|||
 |  | 10000 | - |- |76.93 |||
@@ -54,9 +54,9 @@
 | | -| - |100 |43.74 |||[here][mini-c-100-p]|
 | | -| -|50 |42.22 |CADR's protocol|PRG^Last|[here][mini-c-50-l]|
 | | -| - |100 |43.74 |||[here][mini-c-100-l]|
-| | 1000| 40 |- |40.75 |Ours protocol||PRG|[here][mini-o-100040-p]|
+| | 1000| 40 |- |40.75 |Ours protocol|PRG|[here][mini-o-100040-p]|
 | | 1000| 80 |- |35.86|||[here][mini-o-100080-p]|
-| | 1000| 40 |- |39.79|Ours protocol||PRG^Last|[here][mini-o-100040-l]|
+| | 1000| 40 |- |39.79|Ours protocol|PRG^Last|[here][mini-o-100040-l]|
 | | 1000| 80 |- |32.64|||[here][mini-o-100080-l]|
 
 [cf10-o-4010-p]: https://1drv.ms/u/s!Ao848hI985sshjh2bBYISxTEZ7XV?e=eRKPSo

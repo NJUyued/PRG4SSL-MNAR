@@ -30,7 +30,7 @@
 | | 250 | 200 |- |62.16 |||
 |  | DARP | 100 |1 |94.41 |DARP's protocol|PRG|
 |  | DARP | 100 |50 |78.28 |||
-|  | DARP | 100 |150 |75.21 |||
+|  | DARP | 100 |150 |75.21 |||[here][cf10-d-150-p]|
 |  | DARP (reversed) | 100 |100 |80.86 |||
 |CIFAR-100  | 400 | - |- |48.67 |Conventional settings|PRG|
 |  | 2500 | - |- |69.81|||
@@ -80,3 +80,4 @@
 [cf100-con-400-p]: https://1drv.ms/u/s!Ao848hI985sshlyc01tO-hDVcqiG?e=EJuAaZ
 [cf10-c-100-p]: https://1drv.ms/u/s!Ao848hI985sshl5UOBw8uHz9YG3d?e=uzhEjw
 [cf10-c-50-p]: https://1drv.ms/u/s!Ao848hI985sshmAT84qZz3dLC5Rc?e=28alwc
+[cf10-d-150-p]: https://1drv.ms/u/s!AtUffnM8UitOa0SmqsnYFmBOMsA?e=xd3xAo

@@ -11,8 +11,8 @@
 | | 250 | - |- |94.76 |||
 | | 4000 | - |- |95.75 |||
 | | - | - |20 |94.04 |CADR's protocol|PRG|
-| | - | - |50 |93.78 |||
-| | - | - |100 |94.51 |||
+| | - | - |50 |93.78 |||[here][cf10-c-50-p]|
+| | - | - |100 |94.51 |||[here][cf10-c-100-p]|
 | | - | - |20 |94.74 |CADR's protocol|PRG^Last|
 | | - | - |50 |94.74 |||
 | | - | - |100 |94.75 |||
@@ -35,7 +35,7 @@
 |CIFAR-100  | 400 | - |- |48.67 |Conventional settings|PRG|
 |  | 2500 | - |- |69.81|||
 |  | 10000 | - |- |76.91 |||[here][cf100-con-10000-p]|
-|  | 400 | - |- |48.66 |Conventional settings|PRG^Last|
+|  | 400 | - |- |48.66 |Conventional settings|PRG^Last|[here][cf100-con-400-l]|
 |  | 2500 | - |- |70.03|||
 |  | 10000 | - |- |76.93 |||
 |  | - | - |50 |58.57 |CADR's protocol|PRG|[here][cf100-c-50-p]|
@@ -76,3 +76,7 @@
 [mini-con-1000-p]: https://1drv.ms/u/s!Ao848hI985sshlT-gXNvizGnDEGr?e=qjkoVV
 [cf100-c-200-l]: https://1drv.ms/u/s!Ao848hI985sshlYOsLfi8ADvKbEo?e=4wfqwK
 [cf100-con-10000-p]: https://1drv.ms/u/s!Ao848hI985sshljSzpPs2O_jja7d?e=XMPj6N
+[cf100-con-400-l]: https://1drv.ms/u/s!Ao848hI985sshloXC_uwhNUfLwj_?e=l603Ef
+[cf100-con-400-p]: https://1drv.ms/u/s!Ao848hI985sshlyc01tO-hDVcqiG?e=EJuAaZ
+[cf10-c-100-p]: https://1drv.ms/u/s!Ao848hI985sshl5UOBw8uHz9YG3d?e=uzhEjw
+[cf10-c-50-p]: https://1drv.ms/u/s!Ao848hI985sshmAT84qZz3dLC5Rc?e=28alwc

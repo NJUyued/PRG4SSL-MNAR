@@ -70,7 +70,7 @@ if __name__ == "__main__":
     
     if args.dataset=='miniimage':
         from datasets_mini.miniimage import  get_val_loader
-        eval_loader= get_val_loader(dataset=args.dataset, batch_size=args.batch_size, num_workers=1, root=args.data_dir)
+        eval_loader, eval_dset= get_val_loader(dataset=args.dataset, batch_size=args.batch_size, num_workers=1, root=args.data_dir)
     else:
         _eval_dset = SSL_Dataset(name=args.dataset, train=False, data_dir=args.data_dir)
         eval_dset = _eval_dset.get_dset()

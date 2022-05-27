@@ -1,5 +1,11 @@
 # PRG4SSL-MNAR
 
+## Evaluation
+```
+python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path 
+```
+By default, Wide ResNet (WRN-28-2) are used `--net`. Use `--net_from_name True` and `--net resnet18` for ResNet-18 backbone.
+
 ## Results (e.g. seed=1)
 
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|

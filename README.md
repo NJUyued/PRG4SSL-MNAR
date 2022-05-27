@@ -1,10 +1,11 @@
 # PRG4SSL-MNAR
 Code for NeruIPS Submission (ID: 2831). Other source code will be available upon paper acceptance.
 ## Evaluation
+For evaluation, run 
 ```
 python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
 ```
-By default, Wide ResNet (WRN-28-2) are used `--net`. Use `--net_from_name True` and `--net resnet18` for ResNet-18 backbone for mini-ImageNet.
+By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name True` and `--net resnet18` for ResNet-18 backbone for mini-ImageNet.
 
 ## Results (e.g. seed=1)
 

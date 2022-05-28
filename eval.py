@@ -15,8 +15,6 @@ class TotalNet(nn.Module):
         if net_name=='resnet18':
             base_net = net_builder(num_classes=num_classes)    
             self.feature_extractor = ResNet18(num_classes, base_net)  
-        elif net_name=='cnn13':
-            self.feature_extractor = cnn13(num_classes=num_classes)  
         else:
             self.feature_extractor = net_builder(num_classes=num_classes)                  
         
@@ -27,7 +25,7 @@ class TotalNet(nn.Module):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--load_path', type=str, default='./saved_models/mutexmatch/model_best.pth')
+    parser.add_argument('--load_path', type=str, default='./saved_models/prg/model_best.pth')
     parser.add_argument('--use_train_model', action='store_true')
 
     '''

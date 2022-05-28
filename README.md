@@ -1,5 +1,5 @@
 # PRG4SSL-MNAR
-Code for NeruIPS Submission (ID: 2831). Other source code will be available upon paper acceptance.
+Evaluation code for NeruIPS Submission (ID: 2831). Model weights (updating) is available now and other source code will be released upon paper acceptance.
 ## Evaluation
 For evaluation, run 
 ```

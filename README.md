@@ -13,9 +13,9 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |
 |CIFAR-10 | 40 | - |-|94.05 |Conventional settings|PRG||
-| | 250 | - |- |94.36 |||
+| | 250 | - |- |94.36 |||[here][cf10-c-250-p]|
 | | 4000 | - |- |95.48 |||
-| | 40 | - |-|93.79 |Conventional settings|PRG^Last|
+| | 40 | - |-|93.79 |Conventional settings|PRG^Last|[here][cf10-c-40-l]|
 | | 250 | - |- |94.76 |||
 | | 4000 | - |- |95.75 |||
 | | - | - |20 |94.04 |CADR's protocol|PRG|
@@ -36,11 +36,11 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 | | 40 | 20 |- |80.31 |||
 | | 250 | 100 |- |91.36 |||
 | | 250 | 200 |- |62.16 |||
-|  | DARP | 100 |1 |94.41 |DARP's protocol|PRG|
+|  | DARP | 100 |1 |94.41 |DARP's protocol|PRG|[here][cf10-d-1-p]|
 |  | DARP | 100 |50 |78.28 |||
 |  | DARP | 100 |150 |75.21 |||[here][cf10-d-150-p]|
 |  | DARP (reversed) | 100 |100 |80.86 |||
-|CIFAR-100  | 400 | - |- |48.67 |Conventional settings|PRG|
+|CIFAR-100  | 400 | - |- |48.70 |Conventional settings|PRG|[here][cf100-c-400-p]|
 |  | 2500 | - |- |69.81|||
 |  | 10000 | - |- |76.91 |||[here][cf100-con-10000-p]|
 |  | 400 | - |- |48.66 |Conventional settings|PRG^Last|[here][cf100-con-400-l]|
@@ -89,3 +89,7 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 [cf10-c-100-p]: https://1drv.ms/u/s!Ao848hI985sshl5UOBw8uHz9YG3d?e=uzhEjw
 [cf10-c-50-p]: https://1drv.ms/u/s!Ao848hI985sshmAT84qZz3dLC5Rc?e=28alwc
 [cf10-d-150-p]: https://1drv.ms/u/s!AtUffnM8UitOa0SmqsnYFmBOMsA?e=xd3xAo
+[cf10-d-1-p]: https://1drv.ms/u/s!AtUffnM8UitOcuOFyKDat9oMs1U?e=ZXD5iQ
+[cf100-c-400-p]: https://1drv.ms/u/s!AtUffnM8UitOdMMwHjm9-56tDOI?e=yK3psR
+[cf10-c-40-l]: https://1drv.ms/u/s!AtUffnM8UitOdoYLbsKHKOxSMAs?e=yE8H0D
+[cf10-c-250-p]: https://1drv.ms/u/s!AtUffnM8UitOeH87BaEAjKT7vdA?e=B0oRFw

@@ -16,8 +16,8 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 | | 250 | - |- |94.36 |||[here][cf10-c-250-p]|
 | | 4000 | - |- |95.48 |||
 | | 40 | - |-|93.79 |Conventional settings|PRG^Last|[here][cf10-c-40-l]|
-| | 250 | - |- |94.76 |||
-| | 4000 | - |- |95.75 |||
+| | 250 | - |- |94.76 |||[here][cf10-c-250-l]|
+| | 4000 | - |- |95.75 |||[here][cf10-c-4000-l]|
 | | - | - |20 |94.04 |CADR's protocol|PRG|
 | | - | - |50 |93.78 |||[here][cf10-c-50-p]|
 | | - | - |100 |94.51 |||[here][cf10-c-100-p]|
@@ -25,10 +25,10 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 | | - | - |50 |94.74 |||
 | | - | - |100 |94.75 |||
 | | 40 | 10 |- |93.81 |Ours protocol|PRG|[here][cf10-o-4010-p]|
-| | 40 | 20 |- |93.39 |||
-| | 40 | 10 |2 |90.25 |||
-| | 40 | 10 |5 |82.84 |||
-| | 100 | 40 |5 |79.58 |||
+| | 40 | 20 |- |93.39 |||[here][cf10-o-4020-p]|
+| | 40 | 10 |2 |90.25 |||[here][cf10-o-40102-p]|
+| | 40 | 10 |5 |82.84 |||[here][cf10-o-40105-p]|
+| | 100 | 40 |5 |79.58 |||[here][cf10-o-100405-p]|
 | | 100 | 40 |10 |78.61 |||
 | | 250 | 100 |- |93.76 |||
 | | 250 | 200 |- |91.65 |||
@@ -93,3 +93,9 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 [cf100-c-400-p]: https://1drv.ms/u/s!AtUffnM8UitOdMMwHjm9-56tDOI?e=yK3psR
 [cf10-c-40-l]: https://1drv.ms/u/s!AtUffnM8UitOdoYLbsKHKOxSMAs?e=yE8H0D
 [cf10-c-250-p]: https://1drv.ms/u/s!AtUffnM8UitOeH87BaEAjKT7vdA?e=B0oRFw
+[cf10-c-250-l]: https://1drv.ms/u/s!AtUffnM8UitOev36fXBIGuYKzkk?e=OlkmEV
+[cf10-c-4000-l]: https://1drv.ms/u/s!AtUffnM8UitOfFiNS1dZg5-0a6k?e=Z0vcNF
+[cf10-o-40102-p]: https://1drv.ms/u/s!AtUffnM8UitOfvP-Mlkhd2a_gvg?e=xa4Rhg
+[cf10-o-40105-p]: https://1drv.ms/u/s!AtUffnM8UitOgQD0at-nEeqXsN-q?e=fp7CHM
+[cf10-o-4020-p]: https://1drv.ms/u/s!AtUffnM8UitOgQIA7co1RPfjh7_b?e=e9z5OZ
+[cf10-o-100405-p]: https://1drv.ms/u/s!AtUffnM8UitOgQTP1cX8-xjIstzh?e=5Kqhey

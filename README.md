@@ -29,10 +29,10 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 | | 40 | 10 |2 |90.25 |||[here][cf10-o-40102-p]|
 | | 40 | 10 |5 |82.84 |||[here][cf10-o-40105-p]|
 | | 100 | 40 |5 |79.58 |||[here][cf10-o-100405-p]|
-| | 100 | 40 |10 |78.61 |||
+| | 100 | 40 |10 |78.61 |||[here][cf10-o-1004010-p]|
 | | 250 | 100 |- |93.76 |||
 | | 250 | 200 |- |91.65 |||
-| | 40 | 10 |- |91.56 |Ours protocol|PRG^Last|
+| | 40 | 10 |- |91.59 |Ours protocol|PRG^Last|[here][cf10-o-4010-l]|
 | | 40 | 20 |- |80.31 |||
 | | 250 | 100 |- |91.36 |||
 | | 250 | 200 |- |62.16 |||
@@ -49,7 +49,7 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 |  | - | - |50 |58.57 |CADR's protocol|PRG|[here][cf100-c-50-p]|
 |  | - | - |100 |62.28 |||
 |  | - | - |200 |59.33 |||[here][cf100-c-200-p]|
-|  | - | - |50 |60.32 |CADR's protocol|PRG^Last|
+|  | - | - |50 |60.32 |CADR's protocol|PRG^Last|[here][cf100-c-50-l]|
 |  | - | - |100 |62.13 |||[here][cf100-c-100-l]|
 |  | - | - |200 |58.70 |||[here][cf100-c-200-l]|
 |  | 2500 | 100 |- |57.56 |Ours protocol|PRG|[here][cf100-o-2500100-p]|
@@ -99,3 +99,6 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 [cf10-o-40105-p]: https://1drv.ms/u/s!AtUffnM8UitOgQD0at-nEeqXsN-q?e=fp7CHM
 [cf10-o-4020-p]: https://1drv.ms/u/s!AtUffnM8UitOgQIA7co1RPfjh7_b?e=e9z5OZ
 [cf10-o-100405-p]: https://1drv.ms/u/s!AtUffnM8UitOgQTP1cX8-xjIstzh?e=5Kqhey
+[cf10-o-1004010-p]: https://1drv.ms/u/s!AtUffnM8UitOgQZwo98G1rKkIWX_?e=Fx1ASK
+[cf10-o-4010-l]: https://1drv.ms/u/s!AtUffnM8UitOgQg9W8CSy5-4GgeI?e=qSejNA
+[cf100-c-50-l]: https://1drv.ms/u/s!AtUffnM8UitOgQr1e1vNL1duogA-?e=Hp8Vey

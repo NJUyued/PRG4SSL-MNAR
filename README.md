@@ -9,7 +9,7 @@ python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/
 By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name True` and `--net resnet18` for ResNet-18 backbone for mini-ImageNet.
 
 ## Results (e.g. seed=1)
-
+Model weights are being uploaded...
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |
 |CIFAR-10 | 40 | - |-|94.05 |Conventional settings|PRG||
@@ -45,15 +45,15 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 |  | 10000 | - |- |76.91 |||[here][cf100-con-10000-p]|
 |  | 400 | - |- |48.66 |Conventional settings|PRG^Last|[here][cf100-con-400-l]|
 |  | 2500 | - |- |70.03|||
-|  | 10000 | - |- |76.93 |||
+|  | 10000 | - |- |76.93 |||[here][cf100-con-10000-l]|
 |  | - | - |50 |58.57 |CADR's protocol|PRG|[here][cf100-c-50-p]|
-|  | - | - |100 |62.28 |||
+|  | - | - |100 |62.28 |||[here][cf100-c-100-p]|
 |  | - | - |200 |59.33 |||[here][cf100-c-200-p]|
 |  | - | - |50 |60.32 |CADR's protocol|PRG^Last|[here][cf100-c-50-l]|
 |  | - | - |100 |62.13 |||[here][cf100-c-100-l]|
 |  | - | - |200 |58.70 |||[here][cf100-c-200-l]|
 |  | 2500 | 100 |- |57.56 |Ours protocol|PRG|[here][cf100-o-2500100-p]|
-|  | 2500 | 200 |- |51.21 |||
+|  | 2500 | 200 |- |51.21 |||[cf100-o-2500200-p]|
 |  | 2500 | 100 |- |59.40 |Ours protocol|PRG^Last|
 |  | 2500 | 200 |- |42.09 |||
 |mini-ImageNet | 1000| -|- |45.74 |Conventional settings|PRG|[here][mini-con-1000-p]|
@@ -102,3 +102,6 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 [cf10-o-1004010-p]: https://1drv.ms/u/s!AtUffnM8UitOgQZwo98G1rKkIWX_?e=Fx1ASK
 [cf10-o-4010-l]: https://1drv.ms/u/s!AtUffnM8UitOgQg9W8CSy5-4GgeI?e=qSejNA
 [cf100-c-50-l]: https://1drv.ms/u/s!AtUffnM8UitOgQr1e1vNL1duogA-?e=Hp8Vey
+[cf100-c-100-p]: https://1drv.ms/u/s!AtUffnM8UitOgQxopVbWxcEFJ7h7?e=MpeqUP
+[cf100-o-2500200-p]: https://1drv.ms/u/s!AtUffnM8UitOgRCWxs8kj3WvHROz?e=dgfapC
+[cf100-con-10000-l]: https://1drv.ms/u/s!AtUffnM8UitOgRKWHVzUIlPrkUg3?e=JJOfji

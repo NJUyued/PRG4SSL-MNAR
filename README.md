@@ -10,6 +10,7 @@ By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name Tr
 
 ## Results (e.g. seed=1)
 Model weights are being uploaded...
+
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |
 |CIFAR-10 | 40 | - |-|94.05 |Conventional settings|PRG||

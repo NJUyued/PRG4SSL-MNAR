@@ -54,7 +54,7 @@ Model weights are being uploaded...
 |  | - | - |100 |62.13 |||[here][cf100-c-100-l]|
 |  | - | - |200 |58.70 |||[here][cf100-c-200-l]|
 |  | 2500 | 100 |- |57.56 |Ours protocol|PRG|[here][cf100-o-2500100-p]|
-|  | 2500 | 200 |- |51.21 |||[cf100-o-2500200-p]|
+|  | 2500 | 200 |- |51.21 |||[here][cf100-o-2500200-p]|
 |  | 2500 | 100 |- |59.40 |Ours protocol|PRG^Last|
 |  | 2500 | 200 |- |42.09 |||
 |mini-ImageNet | 1000| -|- |45.74 |Conventional settings|PRG|[here][mini-con-1000-p]|

@@ -19,12 +19,12 @@ Model weights are being uploaded···
 | | 40 | - |-|93.79 |Conventional settings|PRG^Last|[here][cf10-c-40-l]|
 | | 250 | - |- |94.76 |||[here][cf10-c-250-l]|
 | | 4000 | - |- |95.75 |||[here][cf10-c-4000-l]|
-| | - | - |20 |94.04 |CADR's protocol|PRG|
+| | - | - |20 |94.04 |CADR's protocol|PRG|[here][cf10-c-20-p]|
 | | - | - |50 |93.78 |||[here][cf10-c-50-p]|
 | | - | - |100 |94.51 |||[here][cf10-c-100-p]|
-| | - | - |20 |94.74 |CADR's protocol|PRG^Last|
-| | - | - |50 |94.74 |||
-| | - | - |100 |94.75 |||
+| | - | - |20 |94.74 |CADR's protocol|PRG^Last|[here][cf10-c-20-l]|
+| | - | - |50 |94.74 |||[here][cf10-c-50-l]|
+| | - | - |100 |94.75 |||[here][cf10-c-100-l]|
 | | 40 | 10 |- |93.81 |Ours protocol|PRG|[here][cf10-o-4010-p]|
 | | 40 | 20 |- |93.39 |||[here][cf10-o-4020-p]|
 | | 40 | 10 |2 |90.25 |||[here][cf10-o-40102-p]|
@@ -36,16 +36,16 @@ Model weights are being uploaded···
 | | 40 | 10 |- |91.59 |Ours protocol|PRG^Last|[here][cf10-o-4010-l]|
 | | 40 | 20 |- |80.31 |||
 | | 250 | 100 |- |91.36 |||
-| | 250 | 200 |- |62.16 |||
+| | 250 | 200 |- |62.16 |||[here][cf10-o-250200-l]|
 |  | DARP | 100 |1 |94.41 |DARP's protocol|PRG|[here][cf10-d-1-p]|
-|  | DARP | 100 |50 |78.28 |||
+|  | DARP | 100 |50 |78.28 |||[here][cf10-d-50-p]|
 |  | DARP | 100 |150 |75.21 |||[here][cf10-d-150-p]|
-|  | DARP (reversed) | 100 |100 |80.86 |||
+|  | DARP (reversed) | 100 |100 |80.86 |||[here][cf10-d-100-p]|
 |CIFAR-100  | 400 | - |- |48.70 |Conventional settings|PRG|[here][cf100-c-400-p]|
-|  | 2500 | - |- |69.81|||
+|  | 2500 | - |- |69.81|||[here][cf100-con-2500-p]|
 |  | 10000 | - |- |76.91 |||[here][cf100-con-10000-p]|
 |  | 400 | - |- |48.66 |Conventional settings|PRG^Last|[here][cf100-con-400-l]|
-|  | 2500 | - |- |70.03|||
+|  | 2500 | - |- |70.03|||[here][cf100-con-2500-l]|
 |  | 10000 | - |- |76.93 |||[here][cf100-con-10000-l]|
 |  | - | - |50 |58.57 |CADR's protocol|PRG|[here][cf100-c-50-p]|
 |  | - | - |100 |62.28 |||[here][cf100-c-100-p]|
@@ -106,3 +106,12 @@ Model weights are being uploaded···
 [cf100-c-100-p]: https://1drv.ms/u/s!AtUffnM8UitOgQxopVbWxcEFJ7h7?e=MpeqUP
 [cf100-o-2500200-p]: https://1drv.ms/u/s!AtUffnM8UitOgRCWxs8kj3WvHROz?e=dgfapC
 [cf100-con-10000-l]: https://1drv.ms/u/s!AtUffnM8UitOgRKWHVzUIlPrkUg3?e=JJOfji
+[cf100-con-2500-l]: https://1drv.ms/u/s!AtUffnM8UitOgRSKqP6t1Cjemklf?e=X89xzs
+[cf100-con-2500-p]: https://1drv.ms/u/s!AtUffnM8UitOgRalQo-9MR-Ngd9_?e=FeNWzD
+[cf10-c-100-l]: https://1drv.ms/u/s!AtUffnM8UitOgRhDb_-RPfwH5pNC?e=sSSI2u
+[cf10-c-50-l]: https://1drv.ms/u/s!AtUffnM8UitOgRrR_a34rnSdG-kb?e=B7uT5D
+[cf10-c-20-l]: https://1drv.ms/u/s!AtUffnM8UitOgRzekRXF7tRGeGYn?e=eSfOPn
+[cf10-c-20-p]: https://1drv.ms/u/s!AtUffnM8UitOgR4cQBTLj4ZV2Ke2?e=8zpPfs
+[cf10-d-100-p]: https://1drv.ms/u/s!AtUffnM8UitOgSBZwtGTsjCAc7cE?e=jowKh8
+[cf10-d-50-p]: https://1drv.ms/u/s!AtUffnM8UitOgSKqZstAt4K3U6yC?e=Rob3OP
+[cf10-o-250200-l]: https://1drv.ms/u/s!AtUffnM8UitOgSQSqu_80fiadsYa?e=GPZ67D

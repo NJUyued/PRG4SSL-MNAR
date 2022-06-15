@@ -9,7 +9,7 @@ python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/
 By default, WideResNet (WRN-28-2) are used for backbone. Use `--net_from_name True` and `--net resnet18` for ResNet-18 backbone for mini-ImageNet.
 
 ## Results (e.g. seed=1)
-Model weights are being uploaded...
+
 
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |

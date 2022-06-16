@@ -1,6 +1,6 @@
 # PRG4SSL-MNAR
 Evaluation code for NeruIPS 2022 Submission: **Pseudo-Rectifying Guidance for Semi-supervised
-Learning with Non-Random Missing Labels (ID: 2831)**. Model weights (updating) are available now and other source code will be released upon paper acceptance.
+Learning with Non-Random Missing Labels (ID: 2831)**. Model weights are available now and other source code will be released upon paper acceptance.
 ## Evaluation
 For evaluation, run 
 ```

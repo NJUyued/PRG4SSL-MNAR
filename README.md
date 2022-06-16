@@ -13,9 +13,9 @@ Model weights are being uploaded···
 ***
 | Dateset | Labels | N0 |gamma|Acc|Setting|Method|Weight|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |
-|CIFAR-10 | 40 | - |-|94.05 |Conventional settings|PRG||
+|CIFAR-10 | 40 | - |-|94.05 |Conventional settings|PRG|[here][cf10-con-40-p]|
 | | 250 | - |- |94.36 |||[here][cf10-c-250-p]|
-| | 4000 | - |- |95.48 |||
+| | 4000 | - |- |95.48 |||[here][cf10-con-4000-p]|
 | | 40 | - |-|93.79 |Conventional settings|PRG^Last|[here][cf10-c-40-l]|
 | | 250 | - |- |94.76 |||[here][cf10-c-250-l]|
 | | 4000 | - |- |95.75 |||[here][cf10-c-4000-l]|
@@ -31,11 +31,11 @@ Model weights are being uploaded···
 | | 40 | 10 |5 |82.84 |||[here][cf10-o-40105-p]|
 | | 100 | 40 |5 |79.58 |||[here][cf10-o-100405-p]|
 | | 100 | 40 |10 |78.61 |||[here][cf10-o-1004010-p]|
-| | 250 | 100 |- |93.76 |||
-| | 250 | 200 |- |91.65 |||
+| | 250 | 100 |- |93.76 |||[here][cf10-o-250100-p]|
+| | 250 | 200 |- |91.65 |||[here][cf10-o-250200-p]|
 | | 40 | 10 |- |91.59 |Ours protocol|PRG^Last|[here][cf10-o-4010-l]|
-| | 40 | 20 |- |80.31 |||
-| | 250 | 100 |- |91.36 |||
+| | 40 | 20 |- |80.31 |||[here][cf10-o-4020-l]|
+| | 250 | 100 |- |91.36 |||[here][cf10-o-250100-l]|
 | | 250 | 200 |- |62.16 |||[here][cf10-o-250200-l]|
 |  | DARP | 100 |1 |94.41 |DARP's protocol|PRG|[here][cf10-d-1-p]|
 |  | DARP | 100 |50 |78.28 |||[here][cf10-d-50-p]|
@@ -55,8 +55,8 @@ Model weights are being uploaded···
 |  | - | - |200 |58.70 |||[here][cf100-c-200-l]|
 |  | 2500 | 100 |- |57.56 |Ours protocol|PRG|[here][cf100-o-2500100-p]|
 |  | 2500 | 200 |- |51.21 |||[here][cf100-o-2500200-p]|
-|  | 2500 | 100 |- |59.40 |Ours protocol|PRG^Last|
-|  | 2500 | 200 |- |42.09 |||
+|  | 2500 | 100 |- |59.40 |Ours protocol|PRG^Last|[here][cf100-o-2500100-l]|
+|  | 2500 | 200 |- |42.09 |||[here][cf100-o-2500200-l]|
 |mini-ImageNet | 1000| -|- |45.74 |Conventional settings|PRG|[here][mini-con-1000-p]|
 | | 1000| -|- |48.63 |Conventional settings|PRG^Last|[here][mini-con-1000-l]|
 | | -| -|50 |43.74 |CADR's protocol|PRG|[here][mini-c-50-p]|
@@ -115,3 +115,11 @@ Model weights are being uploaded···
 [cf10-d-100-p]: https://1drv.ms/u/s!AtUffnM8UitOgSBZwtGTsjCAc7cE?e=jowKh8
 [cf10-d-50-p]: https://1drv.ms/u/s!AtUffnM8UitOgSKqZstAt4K3U6yC?e=Rob3OP
 [cf10-o-250200-l]: https://1drv.ms/u/s!AtUffnM8UitOgSQSqu_80fiadsYa?e=GPZ67D
+[cf10-o-250100-l]: https://1drv.ms/u/s!AtUffnM8UitOgSaSHRV_dVQeoKGn?e=Z0TObf
+[cf10-o-4020-l]: https://1drv.ms/u/s!AtUffnM8UitOgShaMJaXT4HgbK91?e=ekc3vz
+[cf10-o-250200-p]: https://1drv.ms/u/s!AtUffnM8UitOgSqo1f_byw3wp2SA?e=p9j0cs
+[cf10-o-250100-p]: https://1drv.ms/u/s!AtUffnM8UitOgSwa_m44cTqqGJJx?e=jXApqL
+[cf10-con-4000-p]: https://1drv.ms/u/s!AtUffnM8UitOgS8yw07lZjsBHcvA?e=7uec44
+[cf10-con-40-p]: https://1drv.ms/u/s!AtUffnM8UitOgTGbNsSRWO6Y9uiI?e=ghL1pc
+[cf100-o-2500200-l]: https://1drv.ms/u/s!AtUffnM8UitOgQ4-szmII-WWtJFp?e=jjGJ9c
+[cf100-o-2500100-l]: https://1drv.ms/u/s!AtUffnM8UitOgTNLFkXMaDEHA7SH?e=LHDVNP

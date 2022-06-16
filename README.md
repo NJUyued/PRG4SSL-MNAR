@@ -6,7 +6,7 @@ For evaluation, run
 ```
 python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
 ```
-By default, WideResNet (WRN-28-2) is used for backbone. Use `--net_from_name True` and `--net resnet18` for mini-ImageNet.
+By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8` (i.e., WideResNet-28-8) for CIFAR-100 and use `--net_from_name True` and `--net resnet18` for mini-ImageNet.
 
 ## Results (e.g., seed=1)
 

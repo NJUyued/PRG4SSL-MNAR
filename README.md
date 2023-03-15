@@ -1,6 +1,5 @@
 # PRG4SSL-MNAR
-Evaluation code for NeruIPS 2022 Submission: **Pseudo-Rectifying Guidance for Semi-supervised
-Learning with Non-Random Missing Labels (ID: 2831)**. Model weights are available now and other source code will be released upon paper acceptance.
+Evaluation code for ICCV 2023 Submission: **Class Transition Tracking Based Pseudo-Rectifying Guidance for Semi-supervised Learning with Non-random Missing Labels (ID: 11691)**. Model weights are available now and other source code will be released upon paper acceptance.
 ## Evaluation
 For evaluation, run 
 ```

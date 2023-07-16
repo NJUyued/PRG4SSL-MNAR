@@ -7,7 +7,7 @@ This repo is the official Pytorch implementation of our paper:
  
  
  - Latest news:
-     - Our paper is accepted by **International Conference on Computer Vision (ECCV) 2023** 🎉🎉. Thanks to users.
+     - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
      - Evaluation code and model weights are available now and other source code will be released soon (the code is being compiled).
  - Related works:
      - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].

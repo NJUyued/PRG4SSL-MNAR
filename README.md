@@ -60,12 +60,15 @@ python train_prg.py --world-size 1 --rank 0 @@@other args@@@
 
 ```
 python train_prg.py --world-size 1 --rank 0 --multiprocessing-distributed @@@other args@@@
+```
 
 ## Evaluation
-For evaluation, run 
+For evaluation, run
+
 ```
 python eval_prg.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
 ```
+
 By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8` (i.e., WideResNet-28-8) for CIFAR-100 and `--net resnet18` for mini-ImageNet.
 
 ## Results (e.g., seed=1)

@@ -15,7 +15,7 @@ This repo is the official Pytorch implementation of our paper:
   
 <div align=center>
 
-<img width="750px" src="/figures/framework.jpeg"> 
+<img width="750px" src="/figures/framework.Jpeg"> 
  
 </div>
 

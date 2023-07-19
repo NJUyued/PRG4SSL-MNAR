@@ -12,16 +12,16 @@ This repo is the official Pytorch implementation of our paper:
  - Related works:
      - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **prg** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/prg4RobustSSL)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
-  
+
+## Introduction
+
+Semi-supervised learning (SSL) tackles the label missing problem by enabling the effective usage of unlabeled data. While existing SSL methods focus on the traditional setting, a practical and challenging scenario called label Missing Not At Random (MNAR) is usually ignored. In MNAR, the labeled and unlabeled data fall into different class distributions resulting in biased label imputation, which deteriorates the performance of SSL models. In this work, **class transition tracking based Pseudo-Rectifying Guidance (PRG)** is devised for MNAR. We explore the class-level guidance information obtained by the Markov random walk, which is modeled on a dynamically created graph built over the class tracking matrix. PRG unifies the history information of each class transition caused by the pseudo-rectifying procedure to activate the model's enthusiasm for neglected classes, so as the quality of pseudo-labels on both popular classes and rare classes in MNAR could be improved. We show the superior performance of PRG across a variety of MNAR scenarios.
+
 <div align=center>
 
 <img width="750px" src="/figures/framework.Jpeg"> 
  
 </div>
-
-## Introduction
-
-Semi-supervised learning (SSL) tackles the label missing problem by enabling the effective usage of unlabeled data. While existing SSL methods focus on the traditional setting, a practical and challenging scenario called label Missing Not At Random (MNAR) is usually ignored. In MNAR, the labeled and unlabeled data fall into different class distributions resulting in biased label imputation, which deteriorates the performance of SSL models. In this work, **class transition tracking based Pseudo-Rectifying Guidance (PRG)** is devised for MNAR. We explore the class-level guidance information obtained by the Markov random walk, which is modeled on a dynamically created graph built over the class tracking matrix. PRG unifies the history information of each class transition caused by the pseudo-rectifying procedure to activate the model's enthusiasm for neglected classes, so as the quality of pseudo-labels on both popular classes and rare classes in MNAR could be improved. We show the superior performance of PRG across a variety of MNAR scenarios.
 
 ## Requirements
 - numpy==1.21.6

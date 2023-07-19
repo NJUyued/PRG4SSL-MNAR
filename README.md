@@ -40,6 +40,27 @@ Semi-supervised learning (SSL) tackles the label missing problem by enabling the
 - `--dataset [cifar10/cifar100/miniimage]` and `--data_dir`  : Your dataset name and path.  
 - `--num_eval_iter` : After how many iterations, we evaluate the model. Note that although we show the accuracy of pseudo-labels on unlabeled data in the evaluation, this is only to show the training process. We did not use any information about labels for unlabeled data in the training. 
 
+### Training with Single GPU
+
+We recommend using a single GPU for training to better reproduce our results. Multi-GPU training is feasible, but our results are all obtained from single GPU training.
+
+```
+python train_prg.py --rank 0 --gpu [0/1/...] @@@other args@@@
+```
+### Training with Multi-GPUs
+
+- Using DataParallel
+
+```
+python train_prg.py --world-size 1 --rank 0 @@@other args@@@
+```
+
+- Using DistributedDataParallel with single node
+
+
+```
+python train_prg.py --world-size 1 --rank 0 --multiprocessing-distributed @@@other args@@@
+
 ## Evaluation
 For evaluation, run 
 ```

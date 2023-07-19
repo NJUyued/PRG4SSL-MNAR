@@ -10,15 +10,41 @@ This repo is the official Pytorch implementation of our paper:
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
      - Evaluation code and model weights are available now and other source code will be released soon (the code is being compiled).
  - Related works:
-     - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
+     - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **prg** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/prg4RobustSSL)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
+  
+<div align=center>
+
+<img width="750px" src="/figures/framework.jpeg"> 
+ 
+</div>
+
+## Introduction
+
+Semi-supervised learning (SSL) tackles the label missing problem by enabling the effective usage of unlabeled data. While existing SSL methods focus on the traditional setting, a practical and challenging scenario called label Missing Not At Random (MNAR) is usually ignored. In MNAR, the labeled and unlabeled data fall into different class distributions resulting in biased label imputation, which deteriorates the performance of SSL models. In this work, **class transition tracking based Pseudo-Rectifying Guidance (PRG)** is devised for MNAR. We explore the class-level guidance information obtained by the Markov random walk, which is modeled on a dynamically created graph built over the class tracking matrix. PRG unifies the history information of each class transition caused by the pseudo-rectifying procedure to activate the model's enthusiasm for neglected classes, so as the quality of pseudo-labels on both popular classes and rare classes in MNAR could be improved. We show the superior performance of PRG across a variety of MNAR scenarios.
+
+## Requirements
+- numpy==1.19.2
+- pandas==1.1.5
+- Pillow==9.0.1
+- torch==1.4.0+cu92
+- torchvision==0.5.0+cu92
+## How to Train
+### Important Args
+- `--num_labels` : Amount of labeled data used in conventional balanced setting.  
+- `--mismatch [none/prg/cadr/darp/darp_reversed]` : Select the MNAR protocol. `none` means the conventional balanced setting. See Sec. 4 in our paper for the details of MNAR protocols.
+- `--n0` : When `--mismatch prg`, this arg means the imbalanced ratio $N_0$ for labeled data; When `--mismatch [darp/darp_reversed]`, this arg means the imbalanced ratio $\gamma_l$ for labeled data.
+- `--gamma` : When `--mismatch cadr`, this arg means the imbalanced ratio $\gamma$ for labeled data. When `--mismatch prg`, this arg means the imbalanced ratio $\gamma$ for unlabeled data; When `--mismatch DARP/DARP_reversed`, this arg means the imbalanced ratio $\gamma_u$ for unlabeled data. 
+- `--net` : By default, Wide ResNet (WRN-28-2) are used for experiments. If you want to use other backbones for tarining, set `--net [resnet18/preresnet/cnn13]`. We provide alternatives as follows: ResNet-18, PreAct ResNet and CNN-13.
+- `--dataset [cifar10/cifar100/miniimage]` and `--data_dir`  : Your dataset name and path.  
+- `--num_eval_iter` : After how many iterations, we evaluate the model. Note that although we show the accuracy of pseudo-labels on unlabeled data in the evaluation, this is only to show the training process. We did not use any information about labels for unlabeled data in the training. 
 
 ## Evaluation
 For evaluation, run 
 ```
-python eval_mutex.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
+python eval_prg.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
 ```
-By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8` (i.e., WideResNet-28-8) for CIFAR-100 and use `--net_from_name True` and `--net resnet18` for mini-ImageNet.
+By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8` (i.e., WideResNet-28-8) for CIFAR-100 and `--net resnet18` for mini-ImageNet.
 
 ## Results (e.g., seed=1)
 

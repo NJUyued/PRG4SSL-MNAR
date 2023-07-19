@@ -241,8 +241,8 @@ def x_u_split(save_path, labels, L, n_class=100, n_each_class=500,
 
 def get_train_loader(save_path, dataset, batch_size, mu, n_iters_per_epoch, 
         L=100, num_workers=1, root='data', augmethod='fixmatch', 
-        n_each_class=500, flag_mismatch=False, n_labeled_class_max=None, 
-        long_tail_gamma=1, long_tail_label_ratio=None):
+        n_each_class=500, flag_mismatch=False, n0=None, 
+        gamma=1, long_tail_label_ratio=None):
 
     assert dataset.lower().startswith("miniimage")
     df_tmp = pd.read_csv(os.path.join(root, "train.csv"))
@@ -250,8 +250,8 @@ def get_train_loader(save_path, dataset, batch_size, mu, n_iters_per_epoch,
     num_classes = 100
     
     labeled_idx, unlabeled_idx, dist_label = x_u_split(save_path, tmp_labels, L, num_classes, 
-        n_each_class=n_each_class, flag_mismatch=flag_mismatch, n_labeled_class_max=n_labeled_class_max, 
-        long_tail_gamma=long_tail_gamma, long_tail_label_ratio=long_tail_label_ratio)
+        n_each_class=n_each_class, flag_mismatch=flag_mismatch, n_labeled_class_max=n0, 
+        long_tail_gamma=gamma, long_tail_label_ratio=long_tail_label_ratio)
 
     ds_x = MiniImage(
         root=root, 
@@ -310,4 +310,4 @@ def get_val_loader(dataset, batch_size, num_workers=1, pin_memory=True, root='da
         worker_init_fn=worker_init_fn
     )
     
-    return dl, ds
+    return dl

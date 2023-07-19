@@ -67,9 +67,6 @@ class SSL_Dataset:
                  train=True,
                  num_classes=10,
                  data_dir='./data',
-                 fold=0,
-                 noisy='none',
-                 noisy_radio=0,
                  mismatch='none',
                  n0=0,
                  gamma=0):
@@ -86,9 +83,6 @@ class SSL_Dataset:
         self.data_dir = data_dir
         self.num_classes = num_classes
         self.transform = get_transform(mean[name], std[name], name, train)
-        self.fold = fold
-        self.noisy = noisy
-        self.noisy_radio = noisy_radio
         self.mismatch = mismatch
         self.n0 = n0
         self.gamma = gamma
@@ -100,12 +94,9 @@ class SSL_Dataset:
         if self.name=='stl10':
             if self.train:
                 dset = getattr(torchvision.datasets, self.name.upper())
-                if self.fold in [0,1,2,3,4]:
-                    dset_lb = dset(self.data_dir, split='train', folds=self.fold, download=True)
-                    dset_lb_ulb = dset(self.data_dir, split='train+unlabeled', folds=self.fold, download=True)
-                else:
-                    dset_lb = dset(self.data_dir, split='train', download=True)
-                    dset_lb_ulb = dset(self.data_dir, split='unlabeled', download=True)
+                dset_lb = dset(self.data_dir, split='train', download=True)
+                dset_lb_ulb = dset(self.data_dir, split='unlabeled', download=True)
+                    
                 data_lb, targets_lb = dset_lb.data, dset_lb.labels
                 data_lb_ulb, targets_lb_ulb = dset_lb_ulb.data, dset_lb_ulb.labels
                 return data_lb, targets_lb, data_lb_ulb, targets_lb_ulb
@@ -181,7 +172,7 @@ class SSL_Dataset:
             transform = self.transform
             data_dir = self.data_dir
             distri_lb = []
-            if self.mismatch=='PADR':
+            if self.mismatch=='darp':
                 lb_idx = []
                 lb_data = []
                 lbs = []
@@ -232,8 +223,6 @@ class SSL_Dataset:
             lb_data, lb_targets, ulb_data, ulb_targets, ulb_idx = split_ssl_data(name, data, targets, 
                                                                         num_labels, num_classes, save_path,
                                                                         index, include_lb_to_ulb,
-                                                                        self.noisy,
-                                                                        self.noisy_radio,
                                                                         self.mismatch,
                                                                         self.n0,
                                                                         self.gamma)

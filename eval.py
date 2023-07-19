@@ -1,26 +1,13 @@
-from __future__ import print_function, division
 import os
-from models.nets.net import *
 import torch
 import torch.nn as nn
-import numpy as np
+
+from models.nets.net import *
 from utils import net_builder
 from datasets.ssl_dataset import SSL_Dataset
 from datasets.data_utils import get_data_loader
-
-
-class TotalNet(nn.Module):
-    def __init__(self, net_builder, num_classes, net_name):
-        super(TotalNet, self).__init__()
-        if net_name=='resnet18':
-            base_net = net_builder(num_classes=num_classes)    
-            self.feature_extractor = ResNet18(num_classes, base_net)  
-        else:
-            self.feature_extractor = net_builder(num_classes=num_classes)                  
-        
-    def forward(self, x):
-        f = self.feature_extractor(x)
-        return f
+from train_utils import GM
+from sklearn.metrics import *
 
 if __name__ == "__main__":
     import argparse
@@ -31,8 +18,8 @@ if __name__ == "__main__":
     '''
     Backbone Net Configurations
     '''
-    parser.add_argument('--net', type=str, default='WideResNet')
-    parser.add_argument('--net_from_name', type=bool, default=False)
+    parser.add_argument('--net', type=str, default='wrn', 
+            help='use {wrn,resnet18,preresnet,cnn13} for {Wide ResNet,ResNet-18,PreAct ResNet,CNN-13}')
     parser.add_argument('--depth', type=int, default=28)
     parser.add_argument('--widen_factor', type=int, default=2)
     parser.add_argument('--leaky_slope', type=float, default=0.1)
@@ -52,19 +39,16 @@ if __name__ == "__main__":
     load_model = checkpoint['train_model'] if args.use_train_model else checkpoint['eval_model']
     
     _net_builder = net_builder(args.net, 
-                               args.net_from_name,
                                {'depth': args.depth, 
                                 'widen_factor': args.widen_factor,
                                 'leaky_slope': args.leaky_slope,
                                 'dropRate': args.dropout})
     
-    eval_model = TotalNet(_net_builder, args.num_classes, args.net) 
+    eval_model = _net_builder(args.num_classes) 
     eval_model.load_state_dict(load_model,strict=True)
     if torch.cuda.is_available():
         eval_model.cuda()
     eval_model.eval()
-    feature_extractor = eval_model.feature_extractor
-    
     
     if args.dataset=='miniimage':
         from datasets_mini.miniimage import  get_val_loader
@@ -81,6 +65,8 @@ if __name__ == "__main__":
     total_loss = 0.0
     total_acc = 0.0
     total_num = 0.0
+    y_true = []
+    y_pred = []
     with torch.no_grad():
         for x, y in eval_loader:
             y = y.long()
@@ -88,7 +74,7 @@ if __name__ == "__main__":
             num_batch = x.shape[0]
             total_num += num_batch
 
-            logits, feature = feature_extractor.forward(x, ood_test=True) 
+            logits = eval_model(x) 
                 
             max_probs, max_idx = torch.max(torch.softmax(logits, dim=-1), dim=-1)
             max_probs_sort, idx_sort = torch.sort(logits, descending=True)
@@ -96,4 +82,12 @@ if __name__ == "__main__":
             acc = torch.sum(max_idx == y)           
             total_acc += acc.detach()
 
-    print(f"Test Accuracy: {total_acc/len(eval_dset)}")
+            y_true.extend(y.cpu().tolist())
+            y_pred.extend(max_idx.cpu().tolist())
+
+    
+    report = classification_report(y_true, y_pred, zero_division=1)
+    precision = precision_score(y_true, y_pred, average='macro', zero_division=1)
+    recall = recall_score(y_true, y_pred, average='macro')  
+    gm = GM(y_pred, y_true)
+    print(f"Test Accuracy: {total_acc/len(eval_dset)}, Precision: {precision}, Recall: {recall}, GM: {gm}\nReport: {report}")

@@ -10,7 +10,7 @@ This repo is the official Pytorch implementation of our paper:
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
      - Evaluation code and model weights are available now and other source code will be released soon (the code is being compiled).
  - Related works:
-     - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **prg** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/prg4RobustSSL)].
+     - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
 
 ## Introduction

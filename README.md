@@ -10,12 +10,12 @@ This repo is the official Pytorch implementation of our paper:
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
      - Evaluation code and model weights are available now and other source code will be released soon (the code is being compiled).
  - Related works:
-     - **[Most relevant]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
+     - **[Most Relevant 🔗]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
 
 ## Introduction
 
-Semi-supervised learning (SSL) tackles the label missing problem by enabling the effective usage of unlabeled data. While existing SSL methods focus on the traditional setting, a practical and challenging scenario called label Missing Not At Random (MNAR) is usually ignored. In MNAR, the labeled and unlabeled data fall into different class distributions resulting in biased label imputation, which deteriorates the performance of SSL models. In this work, **class transition tracking based Pseudo-Rectifying Guidance (PRG)** is devised for MNAR. We explore the class-level guidance information obtained by the Markov random walk, which is modeled on a dynamically created graph built over the class tracking matrix. PRG unifies the history information of each class transition caused by the pseudo-rectifying procedure to activate the model's enthusiasm for neglected classes, so as the quality of pseudo-labels on both popular classes and rare classes in MNAR could be improved. We show the superior performance of PRG across a variety of MNAR scenarios.
+Semi-supervised learning (SSL) tackles the label missing problem by enabling the effective usage of unlabeled data. While existing SSL methods focus on the traditional setting, a practical and challenging scenario called label *Missing Not At Random (MNAR)* is usually ignored. In MNAR, the labeled and unlabeled data fall into different class distributions resulting in biased label imputation, which deteriorates the performance of SSL models. In this work, class transition tracking based **Pseudo-Rectifying Guidance (PRG)** is devised for MNAR. We explore the class-level guidance information obtained by the Markov random walk, which is modeled on a dynamically created graph built over the class tracking matrix. PRG unifies the history information of each class transition caused by the pseudo-rectifying procedure to activate the model's enthusiasm for neglected classes, so as the quality of pseudo-labels on both popular classes and rare classes in MNAR could be improved. 
 
 <div align=center>
 
@@ -45,7 +45,7 @@ Semi-supervised learning (SSL) tackles the label missing problem by enabling the
 We recommend using a single GPU for training to better reproduce our results. Multi-GPU training is feasible, but our results are all obtained from single GPU training.
 
 ```
-python train_prg.py --rank 0 --gpu [0/1/...] @@@other args@@@
+python train_prg.py --world-size 1 --rank 0 --gpu [0/1/...] @@@other args@@@
 ```
 ### Training with Multi-GPUs
 

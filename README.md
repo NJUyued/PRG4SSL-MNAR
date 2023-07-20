@@ -62,14 +62,91 @@ python train_prg.py --world-size 1 --rank 0 @@@other args@@@
 python train_prg.py --world-size 1 --rank 0 --multiprocessing-distributed @@@other args@@@
 ```
 
-## Evaluation
+## Examples of Running
+By default, the model and `dist&index.txt` will be saved in `\--save_dir\--save_name`. The file `dist&index.txt` will display detailed settings of MNAR. This code assumes 1 epoch of training, but the number of iterations is 2\*\*20. For CIFAR-100, you need set `--widen_factor 8` for WRN-28-8 whereas WRN-28-2 is used for CIFAR-10.  Note that you need set `--net resnet18` for mini-ImageNet. 
+
+### MNAR Settings
+#### CADR's protocol in Tab. 1
+- CIFAR-10 with $\gamma=20$
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --num_labels 40 --mismatch cadr --gamma 20 --gpu 0
+```
+
+- CIFAR-100 with $\gamma=50$ 
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar100 --dataset cifar100 --num_classes 100 --num_labels 400 --mismatch cadr --gamma 50 --gpu 0 --widen_factor 8
+```
+
+- mini-ImageNet with $\gamma=50$ 
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name miniimage --dataset miniimage --num_classes 100 --num_labels 1000 --mismatch cadr --gamma 50 --gpu 0 --net resnet18 
+```
+
+#### Our protocol in Tab. 2
+- CIFAR-10 with 40 labels and $N_0=10$
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --num_labels 40 --mismatch prg --n0 10 --gpu 0
+```
+
+- CIFAR-100 with 400 labels and $N_0=40$ 
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar100 --dataset cifar100 --num_classes 100 --num_labels 400 --mismatch prg --n0 40 --gpu 0 --widen_factor 8
+```
+
+- mini-ImageNet with 1000 labels and $N_0=40$
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name miniimage --dataset miniimage --num_classes 100 --num_labels 1000 --mismatch prg --n0 40 --gpu 0 --net resnet18 
+```
+
+#### Our protocol in Fig. 6(a)
+- CIFAR-10 with 40 labels, $N_0=10$ and $\gamma=5$ 
+
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --num_labels 40 --mismatch prg --n0 10 --gamma 5 --gpu 0
+```
+
+
+#### Our protocol in Tab. 10
+- CIFAR-10 with 40 labels and $\gamma=20$ 
+
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --num_labels 40 --mismatch prg --gamma 20 --gpu 0
+```
+
+#### DARP's protocol in Fig. 6(a)
+- CIFAR-10 with $\gamma_l=100$ and $\gamma_u=1$ 
+
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --mismatch darp --n0 100 --gamma 1 --gpu 0
+```
+
+
+- CIFAR-10 with $\gamma_l=100$ and $\gamma_u=100$ (reversed) 
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --mismatch darp_reversed --n0 100 --gamma 100 --gpu 0
+```
+
+
+### Conventional Setting 
+#### Matched and balanced distribution in Tab. 11
+- CIFAR-10 with 40 labels
+
+```
+python train_prg.py --world-size 1 --rank 0 --lr_decay cos --seed 1 --num_eval_iter 1000 --overwrite --save_name cifar10 --dataset cifar10 --num_classes 10 --num_labels 40  --gpu 0
+```
+
+## Resume Training and Evaluation
+If you restart the training, please use `--resume --load_path @your_weight_path`.
+
 For evaluation, run
 
 ```
-python eval_prg.py --load_path @your_weight_path --dataset @[cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
+python eval_prg.py --load_path @your_weight_path --dataset [cifar10/cifar100/miniimage] --data_dir @your_dataset_path --num_classes @number_of_classes
 ```
-
+    
 By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8` (i.e., WideResNet-28-8) for CIFAR-100 and `--net resnet18` for mini-ImageNet.
+
+
 
 ## Results (e.g., seed=1)
 

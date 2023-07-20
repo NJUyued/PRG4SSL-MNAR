@@ -8,7 +8,6 @@ This repo is the official Pytorch implementation of our paper:
  
  - Latest news:
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
-     - Evaluation code and model weights are available now and other source code will be released soon (the code is being compiled).
  - Related works:
      - **[MOST RELEVANT 📍]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
@@ -32,6 +31,9 @@ Semi-supervised learning (SSL) tackles the label missing problem by enabling the
 - torchvision==0.9.0
 ## How to Train
 ### Important Args
+- `--last`: Set this flag to use the model of $\textrm{PRG}^{\textrm{Last}}$.
+- `--alpha`: class invariance coefficient. By default, `--alpha 1` is set. When set `--last`, please set `--alpha 0.4`.
+- `--nb`: Number of tracked bathches.
 - `--mismatch [none/prg/cadr/darp/darp_reversed]` : Select the MNAR protocol. `none` means the conventional balanced setting. See Sec. 4 in our paper for the details of MNAR protocols.
 - `--n0` : When `--mismatch prg`, this arg means the imbalanced ratio $N_0$ for labeled data; When `--mismatch [darp/darp_reversed]`, this arg means the imbalanced ratio $\gamma_l$ for labeled data.
 - `--gamma` : When `--mismatch cadr`, this arg means the imbalanced ratio $\gamma$ for labeled data. When `--mismatch prg`, this arg means the imbalanced ratio $\gamma$ for unlabeled data; When `--mismatch DARP/DARP_reversed`, this arg means the imbalanced ratio $\gamma_u$ for unlabeled data. 

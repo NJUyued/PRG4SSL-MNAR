@@ -294,7 +294,7 @@ if __name__ == "__main__":
     '''
     parser.add_argument('--Nb', type=int, default=128,
                         help='number of tracked bathches')
-    parser.add_argument('--alpha', type=int, default=1,
+    parser.add_argument('--alpha', type=float, default=1,
                         help='class invariance coefficient')
     parser.add_argument('--last', action='store_true',
                         help='choose model from {PRG,PRG^last}')

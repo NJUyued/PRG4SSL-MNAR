@@ -149,7 +149,7 @@ def accuracy(output, target, topk=(1,)):
 def GM(Predictions, Labels):
     MCM = multilabel_confusion_matrix(Labels, Predictions,
                                       sample_weight=None,
-                                      labels=None, samplewise=None)
+                                      labels=None, samplewise=False)
     # MCM此处是 5 * 2 * 2的混淆矩阵（ndarray格式），5表示的是5分类
 
     # 切片操作，获取每一个类别各自的 tn, fp, tp, fn

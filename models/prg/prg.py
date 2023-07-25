@@ -169,6 +169,7 @@ class PRG:
                 ## row-wise norm
                 H = CTT_tmp / (CTT_tmp.abs().sum(1, keepdim=True) + 1e-16)
                 H = H + a_diag 
+
                 H_prime = H.cuda(args.gpu) / torch.mean(distri,dim=0)
             
                 unsup_loss, mask = consistency_loss_prg(
@@ -295,6 +296,7 @@ class PRG:
         # report = classification_report(y_true, y_pred, zero_division=1)
         precision = precision_score(y_true, y_pred, average='macro', zero_division=1)
         recall = recall_score(y_true, y_pred, average='macro')  
+
         gm = GM(y_pred, y_true)
         # self.print_fn(report)
         

@@ -1,0 +1,17 @@
+# Ignore all files with the .file extension
+*.file
+
+# Ignore the "saved_models" folder
+saved_models/
+
+# Ignore all Python cache files
+__pycache__/
+
+# Ignore any file or folder named "temp"
+temp
+
+# Ignore any file or folder named "tmp"
+tmp
+
+# Ignore any file or folder with the .tmp extension
+*.tmp

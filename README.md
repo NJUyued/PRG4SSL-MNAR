@@ -32,7 +32,7 @@ Semi-supervised learning (SSL) tackles the label missing problem by enabling the
 ## How to Train
 ### Important Args
 - `--last`: Set this flag to use the model of $\textrm{PRG}^{\textrm{Last}}$.
-- `--alpha`: class invariance coefficient. By default, `--alpha 1` is set. When set `--last`, please set `--alpha 0.4`.
+- `--alpha`: class invariance coefficient. By default, `--alpha 1` is set. When set `--last`, please set `--alpha 3`.
 - `--nb`: Number of tracked bathches.
 - `--mismatch [none/prg/cadr/darp/darp_reversed]` : Select the MNAR protocol. `none` means the conventional balanced setting. See Sec. 4 in our paper for the details of MNAR protocols.
 - `--n0` : When `--mismatch prg`, this arg means the imbalanced ratio $N_0$ for labeled data; When `--mismatch [darp/darp_reversed]`, this arg means the imbalanced ratio $\gamma_l$ for labeled data.

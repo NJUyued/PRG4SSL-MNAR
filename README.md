@@ -2,7 +2,7 @@
 
 This repo is the official Pytorch implementation of our paper:
 
-> **Class Transition Tracking Based Pseudo-Rectifying Guidance for Semi-supervised Learning with Non-random Missing Labels**  
+> **Towards Semi-supervised Learning with Non-random Missing Labels**  
 > ***Authors**: Yue Duan, Zhen Zhao, Lei Qi, Lei Wang, Luping Zhou and Yinghuan Shi* 
  
  

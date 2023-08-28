@@ -265,3 +265,16 @@ By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8
 [cf10-con-40-p]: https://1drv.ms/u/s!AtUffnM8UitOgTGbNsSRWO6Y9uiI?e=ghL1pc
 [cf100-o-2500200-l]: https://1drv.ms/u/s!AtUffnM8UitOgQ4-szmII-WWtJFp?e=jjGJ9c
 [cf100-o-2500100-l]: https://1drv.ms/u/s!AtUffnM8UitOgTNLFkXMaDEHA7SH?e=LHDVNP
+
+## Citation
+Please cite our paper if you find MutexMatch useful:
+
+```
+@article{duan2023towards,
+  title={Towards Semi-supervised Learning with Non-random Missing Labels},
+  author={Duan, Yue and Zhao, Zhen and Qi, Lei and Zhou, Luping and Wang, Lei and Shi, Yinghuan},
+  journal={arXiv preprint arXiv:2308.08872},
+  year={2023}
+}
+```
+

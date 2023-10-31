@@ -5,7 +5,7 @@ This repo is the official Pytorch implementation of our paper:
 > **Towards Semi-supervised Learning with Non-random Missing Labels**  
 > ***Authors**: Yue Duan, Zhen Zhao, Lei Qi, Lei Wang, Luping Zhou and Yinghuan Shi* 
  
-- Quick links: [[arXiv](https://arxiv.org/abs/2308.08872) | [Published paper (coming soon)]() | [Poster (coming soon)]() | [Code download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
+- Quick links: [[arXiv](https://arxiv.org/abs/2308.08872) | [Published paper](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html) | [Poster (coming soon)]() | [Code download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
  
  - Latest news:
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.

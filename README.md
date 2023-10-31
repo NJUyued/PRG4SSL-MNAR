@@ -267,7 +267,7 @@ By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8
 [cf100-o-2500100-l]: https://1drv.ms/u/s!AtUffnM8UitOgTNLFkXMaDEHA7SH?e=LHDVNP
 
 ## Citation
-Please cite our paper if you find MutexMatch useful:
+Please cite our paper if you find PRG useful:
 
 ```
 @inproceedings{duan2023towards,

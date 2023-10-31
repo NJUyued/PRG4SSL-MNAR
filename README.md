@@ -270,6 +270,17 @@ By default, WideResNet-28-2 backbone is used for CIFAR-10. Use `--widen-factor 8
 Please cite our paper if you find MutexMatch useful:
 
 ```
+@inproceedings{duan2023towards,
+  title={Towards Semi-supervised Learning with Non-random Missing Labels},
+  author={Duan, Yue and Zhao, Zhen and Qi, Lei and Zhou, Luping and Wang, Lei and Shi, Yinghuan},
+  booktitle={IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+```
+
+or
+
+```
 @article{duan2023towards,
   title={Towards Semi-supervised Learning with Non-random Missing Labels},
   author={Duan, Yue and Zhao, Zhen and Qi, Lei and Zhou, Luping and Wang, Lei and Shi, Yinghuan},

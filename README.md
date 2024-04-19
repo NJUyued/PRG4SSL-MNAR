@@ -5,12 +5,14 @@ This repo is the official Pytorch implementation of our paper:
 > **Towards Semi-supervised Learning with Non-random Missing Labels**  
 > ***Authors**: Yue Duan, Zhen Zhao, Lei Qi, Lei Wang, Luping Zhou and Yinghuan Shi* 
  
-- Quick links: [[arXiv](https://arxiv.org/abs/2308.08872) | [Published paper](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html) | [Poster](figures/poster.jpg) | [Code download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
+- Quick links: [[arXiv](https://arxiv.org/abs/2308.08872) | [Published paper](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html) | [Poster](figures/poster.jpg) | [Zhihu](https://zhuanlan.zhihu.com/p/653555164) | [Code download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
  
  - Latest news:
+     - We write a detailed introduction to this work on the [Zhihu](https://zhuanlan.zhihu.com/p/653555164).
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
  - Related works:
      - 📍 **[MOST RELEVANT]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[arXiv](https://arxiv.org/abs/2208.04619) | [Repo](https://github.com/NJUyued/RDA4RobustSSL)].
+     - 📍 **[LATEST]** Interested in the SSL in fine-grained visual classification (SS-FGVC)? 👉 Check out our AAAI'24 paper **SoC** [[arXiv](https://arxiv.org/abs/2312.12237) | [Repo](https://github.com/NJUyued/SoC4SS-FGVC/)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[arXiv](https://arxiv.org/abs/2203.14316) | [Repo](https://github.com/NJUyued/MutexMatch4SSL/)].
 
 ## Introduction

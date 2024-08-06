@@ -5,7 +5,7 @@ This repo is the official Pytorch implementation of our paper:
 > **Towards Semi-supervised Learning with Non-random Missing Labels**  
 > ***Authors**: **Yue Duan**, Zhen Zhao, Lei Qi, Lei Wang, Luping Zhou and Yinghuan Shi* 
  
-- 🔗 Quick links: [[PDF](https://arxiv.org/pdf/2308.08872)/[Abs](https://arxiv.org/abs/2308.08872)-arXiv] | [[PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.pdf)/[Abs](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html)-Published] | [Poster](figures/poster.jpg) | [Zhihu](https://zhuanlan.zhihu.com/p/653555164) | [Code Download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
+- 🔗 Quick links: [[PDF](https://arxiv.org/pdf/2308.08872)/[Abs](https://arxiv.org/abs/2308.08872)-arXiv | [PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.pdf)/[Abs](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html)-Published | [Poster](figures/poster.jpg) | [Zhihu](https://zhuanlan.zhihu.com/p/653555164) | [Code Download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
  
  - 📰 Latest news:
      - We write a detailed introduction to this work on the [Zhihu](https://zhuanlan.zhihu.com/p/653555164).

@@ -5,12 +5,12 @@ This repo is the official Pytorch implementation of our paper:
 > **Towards Semi-supervised Learning with Non-random Missing Labels**  
 > ***Authors**: **Yue Duan**, Zhen Zhao, Lei Qi, Lei Wang, Luping Zhou and Yinghuan Shi* 
  
-- Quick links: [[PDF](https://arxiv.org/pdf/2308.08872)/[Abs](https://arxiv.org/abs/2308.08872)-arXiv] | [[PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.pdf)/[Abs](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html)-Published] | [Poster](figures/poster.jpg) | [Zhihu](https://zhuanlan.zhihu.com/p/653555164) | [Code Download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
+- 🔗 Quick links: [[PDF](https://arxiv.org/pdf/2308.08872)/[Abs](https://arxiv.org/abs/2308.08872)-arXiv] | [[PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.pdf)/[Abs](https://openaccess.thecvf.com/content/ICCV2023/html/Duan_Towards_Semi-supervised_Learning_with_Non-random_Missing_Labels_ICCV_2023_paper.html)-Published] | [Poster](figures/poster.jpg) | [Zhihu](https://zhuanlan.zhihu.com/p/653555164) | [Code Download](https://github.com/NJUyued/PRG4SSL-MNAR/archive/refs/heads/master.zip)]
  
- - Latest news:
+ - 📰 Latest news:
      - We write a detailed introduction to this work on the [Zhihu](https://zhuanlan.zhihu.com/p/653555164).
      - Our paper is accepted by **International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
- - Related works:
+ - 📑 Related works:
      - 📍 **[MOST RELEVANT]** Interested in robust SSL in MNAR setting with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[PDF-arXiv](https://arxiv.org/pdf/2208.04619) | [Code](https://github.com/NJUyued/RDA4RobustSSL)].
      - 🆕 **[LATEST]** Interested in the SSL in fine-grained visual classification (SS-FGVC)? 👉 Check out our AAAI'24 paper **SoC** [[PDF-arXiv](https://arxiv.org/pdf/2312.12237) | [Code](https://github.com/NJUyued/SoC4SS-FGVC/)].
      - Interested in the conventional SSL or more application of complementary label in SSL? 👉 Check out our TNNLS paper **MutexMatch** [[PDF-arXiv](https://arxiv.org/pdf/2203.14316) | [Code](https://github.com/NJUyued/MutexMatch4SSL/)].

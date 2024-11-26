@@ -11,8 +11,8 @@ This repo is the official Pytorch implementation of our paper:
      - We write a **detailed explanation (in chinese)** of this work on [知乎(Zhihu)](https://zhuanlan.zhihu.com/p/653555164).
      - Our paper is accepted by **IEEE/CVF International Conference on Computer Vision (ICCV) 2023** 🎉🎉. Thanks to users.
  - 📑 **Related works:**
-     - 🆕 **[LATEST]** Interested in the **cross-modal retrieval with noisy correspondence**? 👉 Check out our ACMMM'24 paper **PC2** [[PDF-arXiv](https://arxiv.org/pdf/2408.01349) | [Code](https://github.com/alipay/PC2-NoiseofWeb)].
      - 📍 **[MOST RELEVANT]** Interested in **robust SSL in MNAR setting** with mismatched distributions? 👉 Check out our ECCV'22 paper **RDA** [[PDF-arXiv](https://arxiv.org/pdf/2208.04619) | [Code](https://github.com/NJUyued/RDA4RobustSSL)].
+     - 🆕 **[LATEST]** Interested in the **cross-modal retrieval with noisy correspondence**? 👉 Check out our ACMMM'24 paper **PC2** [[PDF-arXiv](https://arxiv.org/pdf/2408.01349) | [Code](https://github.com/alipay/PC2-NoiseofWeb)].
      - **[SSL]** Interested in the **SSL in fine-grained visual classification (SS-FGVC)**? 👉 Check out our AAAI'24 paper **SoC** [[PDF-arXiv](https://arxiv.org/pdf/2312.12237) | [Code](https://github.com/NJUyued/SoC4SS-FGVC/)].
      - **[SSL]** Interested in the conventional SSL or more application of **complementary label in SSL**? 👉 Check out our TNNLS paper **MutexMatch** [[PDF-arXiv](https://arxiv.org/pdf/2203.14316) | [Code](https://github.com/NJUyued/MutexMatch4SSL/)].
 
